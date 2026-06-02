@@ -2,9 +2,25 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+  <meta name="description" content="Araçatuba Azul Piscinas — A melhor loja de produtos para piscina em Araçatuba. Cloros, algicidas, clarificantes, pH e muito mais. Atendimento pelo WhatsApp.">
+  <meta name="keywords" content="produtos para piscina Araçatuba, cloro piscina, algicida, clarificante, pH piscina, loja piscina Araçatuba">
+  <meta property="og:title" content="Araçatuba Azul Piscinas — Tudo para sua piscina">
+  <meta property="og:description" content="Produtos de qualidade para manter sua piscina cristalina. Atendimento especializado pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://azulpiscinas.com.br/">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Araçatuba Azul Piscinas — Tudo para sua piscina</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Araçatuba Azul Piscinas — Tudo Para Sua Piscina</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11412022901"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11412022901');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -927,9 +943,198 @@
   /* Scroll suave no âncora do nav */
   section[id] { scroll-margin-top: 80px; }
 
+
+  /* ── PRE-HEADER ── */
+  .pre-header {
+    background: linear-gradient(90deg, var(--blue-700), var(--blue-600));
+    color: white;
+    text-align: center;
+    padding: 9px 16px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 101;
+  }
+  .pre-header span { opacity: 0.85; margin: 0 10px; font-weight: 400; }
+  .pre-header strong { color: #7dd3fc; }
+  .pre-header-close {
+    position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+    background: none; border: none; color: white; cursor: pointer;
+    opacity: 0.6; font-size: 1rem; line-height: 1; padding: 2px 6px;
+    transition: opacity 0.2s;
+  }
+  .pre-header-close:hover { opacity: 1; }
+
+
+  /* ── Redutor de FUDs ── */
+  .fud-reducer {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-bottom: 20px;
+  }
+  .fud-reducer span {
+    font-size: 0.82rem; font-weight: 600;
+    color: var(--blue-700);
+    background: rgba(14,165,233,0.08);
+    border: 1px solid rgba(14,165,233,0.2);
+    padding: 5px 12px; border-radius: var(--radius-pill);
+  }
+
+
+  /* ── Bloco PAS ── */
+  .section-pas {
+    padding: 80px 0 60px;
+    background: #fff8f0;
+  }
+  .pas-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+  }
+  .pas-block {
+    border-radius: var(--radius-xl);
+    padding: 32px 28px;
+    text-align: center;
+  }
+  .pas-problem  { background: #fff1f2; border: 1.5px solid #fecdd3; }
+  .pas-agitate  { background: #fffbeb; border: 1.5px solid #fde68a; }
+  .pas-solution { background: #f0fdf4; border: 1.5px solid #bbf7d0; }
+  .pas-icon { font-size: 2.4rem; margin-bottom: 14px; }
+  .pas-block h3 {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: 1rem; margin-bottom: 10px;
+    color: var(--blue-900);
+  }
+  .pas-block p { font-size: 0.88rem; color: #475569; line-height: 1.65; }
+  @media (max-width: 768px) {
+    .pas-grid { grid-template-columns: 1fr; gap: 16px; }
+  }
+
+
+  /* ── Autoridade ── */
+  .section-autoridade {
+    background: white;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--blue-100);
+    border-top: 1px solid var(--blue-100);
+  }
+  .autoridade-bar {
+    display: flex; align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; gap: 0;
+  }
+  .aut-item {
+    display: flex; flex-direction: column;
+    align-items: center; padding: 0 40px;
+    text-align: center;
+  }
+  .aut-num {
+    font-family: var(--font-display); font-size: 1.8rem;
+    font-weight: 800; color: var(--blue-600); line-height: 1;
+  }
+  .aut-label {
+    font-size: 0.78rem; color: var(--blue-500);
+    margin-top: 5px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .aut-divider {
+    width: 1px; height: 48px;
+    background: var(--blue-200);
+  }
+  @media (max-width: 768px) {
+    .aut-item { padding: 12px 20px; }
+    .aut-divider { display: none; }
+    .autoridade-bar { gap: 8px; }
+  }
+
+
+  /* ── FAQ ── */
+  .section-faq {
+    padding: 90px 0 60px;
+    background: white;
+  }
+  .faq-list {
+    max-width: 760px; margin: 48px auto 0;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .faq-item {
+    border: 1.5px solid var(--blue-200);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: border-color 0.25s;
+  }
+  .faq-item:hover { border-color: var(--blue-400); }
+  .faq-question {
+    width: 100%; background: none; border: none;
+    padding: 18px 22px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    cursor: pointer; text-align: left;
+    font-family: var(--font-display); font-weight: 700;
+    font-size: 0.95rem; color: var(--blue-900);
+    transition: background 0.2s;
+  }
+  .faq-question:hover { background: var(--blue-50); }
+  .faq-arrow {
+    width: 18px; height: 18px; min-width: 18px;
+    color: var(--blue-500);
+    transition: transform 0.3s ease;
+  }
+  .faq-item.open .faq-arrow { transform: rotate(180deg); }
+  .faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 22px;
+  }
+  .faq-item.open .faq-answer {
+    max-height: 200px;
+    padding: 0 22px 18px;
+  }
+  .faq-answer p {
+    font-size: 0.9rem; color: var(--blue-700); line-height: 1.7;
+    border-top: 1px solid var(--blue-100); padding-top: 14px;
+  }
+
+
+  /* ── Sticky CTA Mobile ── */
+  .sticky-mobile-cta {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0;
+    z-index: 150;
+    padding: 12px 16px;
+    background: white;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.12);
+    border-top: 1px solid var(--blue-100);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+  }
+  .sticky-mobile-cta.visible { transform: translateY(0); }
+  .sticky-wa-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: #25D366; color: white;
+    padding: 14px; border-radius: var(--radius-pill);
+    font-family: var(--font-display); font-weight: 800; font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+  }
+  @media (max-width: 768px) {
+    .sticky-mobile-cta { display: block; }
+    .wa-float { bottom: 90px; }
+  }
+
 </style>
 </head>
 <body>
+
+<!-- ── PRE-HEADER ── -->
+<div class="pre-header" id="pre-header">
+  ⭐ Mais de <strong>5.000 clientes satisfeitos</strong> em Araçatuba
+  <span>•</span>
+  🚚 Entrega rápida na região
+  <span>•</span>
+  💬 Atendimento pelo WhatsApp em minutos
+  <button class="pre-header-close" onclick="document.getElementById('pre-header').style.display='none'" aria-label="Fechar">✕</button>
+</div>
 
 <!-- ── NAVBAR ── -->
 <nav class="navbar" id="navbar">
@@ -945,8 +1150,7 @@
       <li><a href="#catalogo">Produtos</a></li>
       <li><a href="#localizacao">Onde estamos</a></li>
       <li>
-        <a href="https://wa.me/5518996975858"
-           class="nav-cta" target="_blank">
+        <a href="https://wa.me/5518996975858?text=Olá!%20Gostaria%20de%20um%20orçamento%20gratuito%20para%20minha%20piscina!" class="nav-cta" target="_blank">
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
             <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.126 1.529 5.862L0 24l6.308-1.499A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.952 0-3.77-.528-5.328-1.44l-.38-.226-3.944.937.998-3.838-.249-.394A9.822 9.822 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.82 4.39 9.82 9.82 0 5.43-4.39 9.818-9.82 9.818z"/>
@@ -974,24 +1178,31 @@
         <span></span>
         Especialistas em piscinas desde 2010
       </div>
-      <h1>Sua piscina <em>cristalina</em><br>começa aqui</h1>
-      <p>Cloros, algicidas, clarificantes, pH e muito mais. Produtos de qualidade para manter sua piscina sempre limpa, segura e pronta para mergulhar.</p>
+      <h1>Azul Piscinas —<br><em>Tudo Para Sua</em> Piscina</h1>
+      <p>A loja especializada de Araçatuba com produtos certos, preço justo e orientação gratuita para você nunca mais ter dor de cabeça com sua piscina.</p>
 
       <div class="hero-actions">
-        <a href="https://wa.me/5518996975858"
+        <a href="https://wa.me/5518996975858?text=Olá!%20Gostaria%20de%20um%20orçamento%20gratuito%20para%20minha%20piscina!"
            class="btn-primary" target="_blank">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
             <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.126 1.529 5.862L0 24l6.308-1.499A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.952 0-3.77-.528-5.328-1.44l-.38-.226-3.944.937.998-3.838-.249-.394A9.822 9.822 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.82 4.39 9.82 9.82 0 5.43-4.39 9.818-9.82 9.818z"/>
           </svg>
-          Pedir no WhatsApp
+          Pedir Orçamento Grátis Agora →
         </a>
         <a href="#catalogo" class="btn-secondary">
-          Ver produtos
+          Ver produtos e preços
           <svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;">
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
           </svg>
         </a>
+      </div>
+
+      <!-- Redutor de FUDs -->
+      <div class="fud-reducer">
+        <span>✓ Orientação gratuita</span>
+        <span>✓ Produtos originais</span>
+        <span>✓ Resposta em minutos</span>
       </div>
 
       <div class="hero-stats">
@@ -1058,6 +1269,34 @@
   <svg class="hero-waves" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="white"/>
   </svg>
+</section>
+
+
+<!-- ── AUTORIDADE ── -->
+<section class="section-autoridade">
+  <div class="container">
+    <div class="autoridade-bar">
+      <div class="aut-item" data-reveal>
+        <span class="aut-num">+5.000</span>
+        <span class="aut-label">Clientes atendidos</span>
+      </div>
+      <div class="aut-divider"></div>
+      <div class="aut-item" data-reveal data-delay="1">
+        <span class="aut-num">+10</span>
+        <span class="aut-label">Anos no mercado</span>
+      </div>
+      <div class="aut-divider"></div>
+      <div class="aut-item" data-reveal data-delay="2">
+        <span class="aut-num">⭐ 5.0</span>
+        <span class="aut-label">Avaliação no Google</span>
+      </div>
+      <div class="aut-divider"></div>
+      <div class="aut-item" data-reveal data-delay="3">
+        <span class="aut-num">100%</span>
+        <span class="aut-label">Produtos originais</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ── SOBRE ── -->
@@ -1216,6 +1455,38 @@
 <!-- Wave -->
 <svg viewBox="0 0 1440 50" preserveAspectRatio="none" class="wave-divider" xmlns="http://www.w3.org/2000/svg" style="background:#f0f9ff;">
   <path d="M0,0 C480,50 960,0 1440,50 L1440,50 L0,50 Z" fill="white"/>
+</svg>
+
+
+<!-- ── BLOCO PAS EMOCIONAL ── -->
+<section class="section-pas" id="problema">
+  <div class="container">
+    <div class="pas-grid">
+
+      <div class="pas-block pas-problem" data-reveal>
+        <div class="pas-icon">😓</div>
+        <h3>Sua piscina virou um problema?</h3>
+        <p>Água verde, turva ou com cheiro forte é sinal de desequilíbrio químico. E sem o produto certo, qualquer tentativa de solução vira dinheiro jogado fora.</p>
+      </div>
+
+      <div class="pas-block pas-agitate" data-reveal data-delay="1">
+        <div class="pas-icon">⚠️</div>
+        <h3>Cada dia sem tratar, o problema aumenta</h3>
+        <p>Algas se multiplicam, o filtro entope, a bomba sofre — e o que seria uma manutenção simples vira uma limpeza cara. Sem contar o risco para quem mergulha.</p>
+      </div>
+
+      <div class="pas-block pas-solution" data-reveal data-delay="2">
+        <div class="pas-icon">✅</div>
+        <h3>A solução certa, na dose certa</h3>
+        <p>Na Araçatuba Azul Piscinas você compra o produto correto para o seu problema — com orientação de quem entende. Sem adivinhação, sem desperdício.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<svg viewBox="0 0 1440 40" preserveAspectRatio="none" class="wave-divider" xmlns="http://www.w3.org/2000/svg" style="background:#fff8f0;">
+  <path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="white"/>
 </svg>
 
 <!-- ── CATÁLOGO ── -->
@@ -1480,6 +1751,85 @@
   <path d="M0,25 C360,50 720,0 1080,25 C1260,37 1380,20 1440,25 L1440,50 L0,50 Z" fill="#0369a1" opacity="0.95"/>
 </svg>
 
+
+<!-- ── FAQ ── -->
+<section class="section-faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" data-reveal>Dúvidas frequentes</div>
+      <h2 class="section-title" data-reveal data-delay="1">Antes de falar com a gente,<br>veja se sua dúvida está <em>aqui</em></h2>
+    </div>
+
+    <div class="faq-list" data-reveal>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Não sei qual produto usar. Como vocês me ajudam?</span>
+          <svg class="faq-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>É só me dizer o problema da sua piscina — água verde, turva, com cheiro, pH alto ou baixo — e nossa equipe indica o produto certo na dose certa. Atendemos pelo WhatsApp com resposta rápida.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Vocês fazem entrega em Araçatuba e região?</span>
+          <svg class="faq-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Sim! Fazemos entregas em Araçatuba e cidades da região. Também é possível retirar na loja na Rua Saldanha Marinho, 1140. Consulte o prazo e condições pelo WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Os produtos são originais e de qualidade?</span>
+          <svg class="faq-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>100%. Trabalhamos apenas com produtos de marcas reconhecidas e com procedência garantida. Nada de produto adulterado ou diluído — isso compromete sua piscina e a saúde da família.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Qual a forma de pagamento?</span>
+          <svg class="faq-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Aceitamos dinheiro, Pix, cartão de débito e crédito. Consulte condições de parcelamento pelo WhatsApp para pedidos maiores.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Minha piscina está verde. O que devo comprar?</span>
+          <svg class="faq-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Água verde indica proliferação de algas. O tratamento envolve choque de cloro + algicida + clarificante, na dosagem certa para o volume da sua piscina. Fale conosco no WhatsApp e resolvemos em poucos dias.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Qual o horário de atendimento?</span>
+          <svg class="faq-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Loja física: Segunda a Sexta das 8h às 18h, Sábado das 8h às 13h e Domingo das 8h às 12h. Pelo WhatsApp respondemos também fora do horário para tirar dúvidas rápidas.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<svg viewBox="0 0 1440 40" preserveAspectRatio="none" class="wave-divider" xmlns="http://www.w3.org/2000/svg" style="background:white;">
+  <path d="M0,0 C480,40 960,0 1440,40 L1440,40 L0,40 Z" fill="#0369a1" opacity="0.95"/>
+</svg>
+
 <!-- ── CTA WHATSAPP ── -->
 <section class="section-cta" id="contato">
   <div class="cta-bg-circle cbc1"></div>
@@ -1492,10 +1842,13 @@
       </svg>
     </div>
 
-    <h2 data-reveal data-delay="1">Pronto para ter uma<br>piscina <span style="color:#7dd3fc;">impecável?</span></h2>
-    <p data-reveal data-delay="2">Fale com a nossa equipe agora mesmo. Orientamos você na escolha dos produtos certos e fazemos seu pedido pelo WhatsApp de forma rápida e simples.</p>
+    <p style="color:rgba(255,255,255,0.6);font-size:0.82rem;margin-bottom:12px;font-family:var(--font-body);" data-reveal>
+      💬 Resposta em minutos · Sem compromisso
+    </p>
+    <h2 data-reveal data-delay="1">Sua piscina cristalina está<br>a <span style="color:#7dd3fc;">uma mensagem</span> de distância</h2>
+    <p data-reveal data-delay="2">Descreva o problema da sua piscina e nosso especialista indica os produtos certos, na dose certa — sem custo, sem enrolação.</p>
 
-    <a href="https://wa.me/5518996975858"
+    <a href="https://wa.me/5518996975858?text=Olá!%20Quero%20ajuda%20para%20tratar%20minha%20piscina.%20Podem%20me%20indicar%20os%20produtos%20certos%3F"
        class="btn-whatsapp" target="_blank" data-reveal data-delay="3">
       <svg viewBox="0 0 24 24" fill="currentColor">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
@@ -1503,7 +1856,7 @@
       </svg>
       Chamar no WhatsApp agora
     </a>
-    <p class="cta-note" data-reveal data-delay="4">Atendimento de seg. a sáb. · Resposta rápida garantida</p>
+    <p class="cta-note" data-reveal data-delay="4">✓ Seg. a Dom. &nbsp;·&nbsp; ✓ Sem compromisso &nbsp;·&nbsp; ✓ Resposta em minutos</p>
   </div>
 </section>
 
@@ -1558,6 +1911,33 @@
 </a>
 
 <script>
+
+/* ── FAQ Accordion ── */
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  // Fechar todos
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  // Abrir o clicado (se não estava aberto)
+  if (!isOpen) item.classList.add('open');
+}
+
+/* ── Google Ads Conversion Tracking ── */
+function trackWAClick() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11412022901',
+      'event_category': 'WhatsApp',
+      'event_label': 'CTA Click'
+    });
+  }
+}
+
+// Rastrear todos os cliques em links do WhatsApp
+document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+  link.addEventListener('click', trackWAClick);
+});
+
 /* ── Navbar scroll ── */
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
@@ -1702,5 +2082,18 @@ document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
   });
 })();
 </script>
+
+<!-- ── STICKY CTA MOBILE ── -->
+<div class="sticky-mobile-cta" id="sticky-cta">
+  <a href="https://wa.me/5518996975858?text=Olá!%20Quero%20ajuda%20para%20tratar%20minha%20piscina.%20Podem%20me%20indicar%20os%20produtos%20certos%3F"
+     target="_blank" class="sticky-wa-btn">
+    <svg viewBox="0 0 24 24" fill="white" style="width:22px;height:22px;">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.126 1.529 5.862L0 24l6.308-1.499A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.952 0-3.77-.528-5.328-1.44l-.38-.226-3.944.937.998-3.838-.249-.394A9.822 9.822 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.82 4.39 9.82 9.82 0 5.43-4.39 9.818-9.82 9.818z"/>
+    </svg>
+    Falar no WhatsApp agora
+  </a>
+</div>
+
 </body>
 </html>
